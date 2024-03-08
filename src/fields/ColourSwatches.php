@@ -386,4 +386,12 @@ class ColourSwatches extends Field implements PreviewableFieldInterface, Sortabl
         }
         return '<div class="color small static"><div class="color-preview" style="' . $style . '"></div></div>';
     }
+
+    /**
+     * @inheritdoc
+     */
+    public static function icon(): string
+    {
+        return 'palette';
+    }
 }
